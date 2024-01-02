@@ -1,24 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "lowercase",
   "version": "${version}",
-  "name": "",
-  "description": "",
+  "name": "lowercase",
+  "description": "make text lowercase",
   "authors": [
     "tildejustin"
   ],
   "contact": {
-    "homepage": "https://modrinth.com/mod/modid",
-    "sources": "https://github.com/tildejustin/modid",
-    "issues": "https://github.com/tildejustin/modid/issues"
+    "homepage": "https://modrinth.com/mod/lowercase",
+    "sources": "https://github.com/tildejustin/lowercase",
+    "issues": "https://github.com/tildejustin/lowercase/issues"
   },
   "license": "MIT",
-  "environment": "*",
+  "environment": "client",
   "mixins": [
-    "modid.mixins.json"
+    "lowercase.mixins.json"
   ],
   "depends": {
-    "minecraft": "*",
-    "fabric-loader": ">=0.15.0"
-  }
+    "minecraft": ">=1.16.2",
+    "fabricloader": ">=0.14"
+  },
+  "accessWidener": "lowercase.accesswidener"
 }

@@ -5,7 +5,12 @@
   "name": "lowercase",
   "description": "make text lowercase",
   "authors": [
-    "tildejustin"
+    {
+      "name": "tildejustin",
+      "contact": {
+        "homepage": "https://github.com/tildejustin"
+      }
+    }
   ],
   "contact": {
     "homepage": "https://modrinth.com/mod/lowercase",
@@ -20,6 +25,5 @@
   "depends": {
     "minecraft": ">=1.16.2",
     "fabricloader": ">=0.14"
-  },
-  "accessWidener": "lowercase.accesswidener"
+  }
 }

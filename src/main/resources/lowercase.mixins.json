@@ -3,6 +3,7 @@
   "package": "dev.tildejustin.lowercase.mixin",
   "compatibilityLevel": "JAVA_8",
   "client": [
+    "TextRendererDrawerUnobfuscatedMixin",
     "TextRendererMixin",
     "TextRendererMixin$DrawerMixin"
   ],

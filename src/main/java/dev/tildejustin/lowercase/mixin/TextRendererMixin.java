@@ -13,13 +13,13 @@ public class TextRendererMixin {
                     /* 1.19.3 */ "method_27529(Ljava/lang/String;FFIZLorg/joml/Matrix4f;Lnet/minecraft/client/render/VertexConsumerProvider;ZIIZ)I",
                     /* 1.16.2-1.19.2 */ "method_27529(Ljava/lang/String;FFIZLnet/minecraft/class_1159;Lnet/minecraft/class_4597;ZIIZ)I"
             },
-            at = @At(value = "HEAD", ordinal = 0), argsOnly = true, allow = 1
+            at = @At(value = "HEAD", ordinal = 0), argsOnly = true, allow = 1, require = 0
     )
     private String lowercase(String original) {
         return original.toLowerCase();
     }
 
-    @Mixin(TextRenderer.Drawer.class)
+    @Mixin(targets = "net/minecraft/client/font/TextRenderer$Drawer")
     public static class DrawerMixin {
         @ModifyVariable(method = "accept", at = @At(value = "HEAD"), ordinal = 1, argsOnly = true)
         private int lowercaseChar(int character) {

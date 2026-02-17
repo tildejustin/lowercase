@@ -19,7 +19,6 @@ loom {
     mixin {
         useLegacyMixinAp = false
     }
-    accessWidenerPath = file("src/main/resources/lowercase.accesswidener")
 }
 
 dependencies {
